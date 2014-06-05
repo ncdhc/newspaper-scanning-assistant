@@ -1,0 +1,60 @@
+/* CUSTOM STYLES
+   SCANNING ASSISTANT */
+
+body {
+    margin: 0 20px;
+}
+
+a, a:hover {
+    color: #fff;
+}
+
+button[type=submit], .fullwidth {
+    width: 100%;
+}
+
+.muted {
+    color: #8e8d8d;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    vertical-align: middle;
+}
+
+a.btn {
+    text-decoration: none;
+}
+
+.scanbutton {
+    min-height: 150px;
+    font-size: 30px;
+}
+
+#scannote {
+background-color: #777;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.text-danger {
+    color: #e74c3c;
+}
+
+.issuealert {
+    display: none;
+    color: #3498db;
+}
