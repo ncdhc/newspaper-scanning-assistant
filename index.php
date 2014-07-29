@@ -76,7 +76,7 @@
                             $scanmethod = $batchparts[2];
                             $timestamp = substr($batchparts[3],0,4).'-'.substr($batchparts[3],4,2).'-'.substr($batchparts[3],6,5).':'.substr($batchparts[3],11,2).':'.substr($batchparts[3],13,2);
                             
-                            echo "<tr><td>$batchname</td><td>$batchcreator</td><td>$scanmethod</td><td>".date('l, F j, Y \a\t g:ia',strtotime($timestamp))."</td><td><a class='btn btn-primary btn-sm' href='download.php?id=$batchid'><span class='glyphicon glyphicon-save'></span></a></td><td><a class='muted pull-right' href=''><span class='glyphicon glyphicon-remove'></span></a></td></tr>";
+                            echo "<tr><td>$batchname</td><td>$batchcreator</td><td>$scanmethod</td><td>".date('l, F j, Y \a\t g:ia',strtotime($timestamp))."</td><td><a class='btn btn-primary btn-sm' href='download.php?id=$batchid'><span class='glyphicon glyphicon-save'></span></a></td><td><a class='muted pull-right' href='delete.php?id=$batchid'><span class='glyphicon glyphicon-remove'></span></a></td></tr>";
                         
                             }
                         } 
