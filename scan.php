@@ -124,7 +124,7 @@
                             <div class="row">
                             <div class="col-xs-6">
                                 <div class="form-group">
-                            <label for="issuedate"><span class="glyphicon glyphicon-exclamation-sign issuealert"></span> Date </label>
+                            <label for="issuedate"><span class="glyphicon glyphicon-exclamation-sign issuealert"></span> Date <span class="small muted">i.e., "YYYY-MM-DD"</span></label>
 
                             <input type="date" class="form-control issuelevel" name="issuedate" id="issuedate" value="<?php echo $datevalue;?>">
                             </div>
