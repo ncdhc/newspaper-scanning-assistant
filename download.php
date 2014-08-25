@@ -38,8 +38,6 @@ foreach ($batchresult as $row) {
 echo $tab_output;
 $batchdb = null;
 
-header("Content-Disposition: attachment; filename=\"".$batchname.".txt\"");
-
 } else {
     echo "Error loading database.";
 }

@@ -202,7 +202,7 @@
                 <hr>
                 </div>
                 <div class="row">
-                    <p class="textcenter"><a href="."><span class="glyphicon glyphicon-log-out"></span> Quit</a></p>
+                    <p class="textcenter"><a class="pull-left" target="_blank" href="download.php?id=<?php echo $batchid;?>"><span class="glyphicon glyphicon-check"></span> Check Progress</a><a class="pull-right" href="."><span class="glyphicon glyphicon-log-out"></span> Quit</a></p>
                 </div>
 
 
