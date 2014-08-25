@@ -1,6 +1,8 @@
 <?php
 
 $batchname = isset($_GET['id']) ? $_GET['id'] : '';
+$batchparts = explode("_",$batchname);
+$batchnameshort = $batchparts[0];
 
 if($batchname !== '') {
 
@@ -22,11 +24,12 @@ foreach ($batchresult as $row) {
     $rowarray = array();
     foreach ($columns as $column) {
         if($column == 'id'){
-        $rowarray[] = str_pad($row[$column], 4, '0', STR_PAD_LEFT);
+        $rowarray[] = $batchnameshort."_".str_pad($row[$column], 4, '0', STR_PAD_LEFT);
         } else {
         $rowarray[] = $row[$column];
         }
     }
+    
     $rowstring = implode("\t",$rowarray);
     $tab_output .= $rowstring."\n";
 
