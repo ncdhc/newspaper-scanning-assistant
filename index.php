@@ -57,7 +57,7 @@
 
                     ?>
                     <thead>
-                        <tr><th>Name</th><th>Creator</th><th>Scan Method</th><th>Create Date</th><th></th></tr>
+                        <tr><th>Name</th><th>Creator</th><th>Create Date</th><th>Download</th></tr>
                     </thead>
                     <tbody>
                         <?php 

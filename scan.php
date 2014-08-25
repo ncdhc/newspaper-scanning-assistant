@@ -24,7 +24,7 @@
         $batchparts = explode("_",$batchid);
         $batchname = $batchparts[0];
         $batchcreator = $batchparts[1];
-        $timestamp = $batchparts[3];
+        $timestamp = $batchparts[2];
         
         
         $batchdb = new PDO("sqlite:batches/$batchid.sqlite3");
