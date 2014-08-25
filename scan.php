@@ -24,7 +24,6 @@
         $batchparts = explode("_",$batchid);
         $batchname = $batchparts[0];
         $batchcreator = $batchparts[1];
-        $scanmethod = $batchparts[2];
         $timestamp = $batchparts[3];
         
         

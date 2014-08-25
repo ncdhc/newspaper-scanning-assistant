@@ -2,13 +2,12 @@
 
 $name = isset($_POST['batchname']) ? filter_input(INPUT_POST, 'batchname', FILTER_SANITIZE_STRING) : '';
 $creator = isset($_POST['batchcreator']) ? filter_input(INPUT_POST, 'batchcreator', FILTER_SANITIZE_STRING) : '';
-$method = isset($_POST['scanmethod']) ? filter_input(INPUT_POST, 'scanmethod', FILTER_SANITIZE_STRING) : '';
 $timestamp = date('Ymd\THis');
 
-if($name == '' || $creator== '' || $method == '') {
+if($name == '' || $creator== '') {
     header('Location: index.php?error=yes');
 } else {
-  $filenamestring = $name."_".$creator."_".$method."_".$timestamp;
+  $filenamestring = $name."_".$creator."_".$timestamp;
   // create sqlite file
   
     $batchdb = new PDO("sqlite:batches/$filenamestring.sqlite3");

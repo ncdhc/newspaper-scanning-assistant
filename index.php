@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Scanning Assistant</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.darkly.min.css" rel="stylesheet">
@@ -39,12 +39,6 @@
                     <label for="batchcreator">Batch Creator <span class="small muted">i.e., "lisa"</span></label>
                     <input type="text" class="form-control batchinput" id="batchcreator" name="batchcreator" placeholder="Enter Batch Creator">
                   </div>
-                  <div class="form-group">
-                      <label for="scanmethod">Scanning Method</label>
-                      <select id="scanmethod" name="scanmethod" class="form-control">
-                          <option value="1up">One page at a time</option>
-                      </select>
-                  </div>
                   <button id="startbutton" type="submit" class="btn btn-primary">Start</button>
               </form>
           </div>
@@ -73,10 +67,9 @@
                             $batchparts = explode("_",$batchid);
                             $batchname = $batchparts[0];
                             $batchcreator = $batchparts[1];
-                            $scanmethod = $batchparts[2];
-                            $timestamp = substr($batchparts[3],0,4).'-'.substr($batchparts[3],4,2).'-'.substr($batchparts[3],6,5).':'.substr($batchparts[3],11,2).':'.substr($batchparts[3],13,2);
+                            $timestamp = substr($batchparts[2],0,4).'-'.substr($batchparts[2],4,2).'-'.substr($batchparts[2],6,5).':'.substr($batchparts[2],11,2).':'.substr($batchparts[2],13,2);
                             
-                            echo "<tr><td>$batchname</td><td>$batchcreator</td><td>$scanmethod</td><td>".date('l, F j, Y \a\t g:ia',strtotime($timestamp))."</td><td><a class='btn btn-primary btn-sm' href='download.php?id=$batchid'><span class='glyphicon glyphicon-save'></span></a></td><td><a class='muted pull-right' href='delete.php?id=$batchid'><span class='glyphicon glyphicon-remove'></span></a></td></tr>";
+                            echo "<tr><td>$batchname</td><td>$batchcreator</td><td>".date('l, F j, Y \a\t g:ia',strtotime($timestamp))."</td><td><a class='btn btn-primary btn-sm' href='download.php?id=$batchid'><span class='glyphicon glyphicon-save'></span></a></td><td><a class='muted pull-right' href='delete.php?id=$batchid'><span class='glyphicon glyphicon-remove'></span></a></td></tr>";
                         
                             }
                         } 
