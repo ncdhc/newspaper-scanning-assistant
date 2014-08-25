@@ -88,6 +88,7 @@
                            
                                 <div class="input-group">
                                         <span class="input-group-btn">
+                                            <button type="button" class="btn btn-info btn-lg" onclick="frontPage();">Front Page</button>
                                             <button type="button" class="btn btn-default btn-lg" onclick="decrement(getElementById('pagenumber'));"><span class="glyphicon glyphicon-minus"></span></button>
                                         </span>
                                         <?php
@@ -109,11 +110,10 @@
                                         }
                                         ?>
                                         <input type="text" class="form-control input-lg" id="pagenumber" name="pagenumber" value="<?php echo $pagenumvalue;?>">
-                                        <span class="input-group-btn">
+                                               <span class="input-group-btn">
                                             <button type="button" class="btn btn-default btn-lg" onclick="increment(getElementById('pagenumber'));"><span class="glyphicon glyphicon-plus"></span></button>
-                                            <button type="button" class="btn btn-info btn-lg" onclick="frontPage();">Front Page</button>
+                                            
                                         </span>
-                        
                                 </div>
                                
                            
