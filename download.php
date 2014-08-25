@@ -1,12 +1,12 @@
 <?php
 
-$batchname = isset($_GET['id']) ? $_GET['id'] : '';
-$batchparts = explode("_",$batchname);
-$batchnameshort = $batchparts[0];
+$batchid = isset($_GET['id']) ? $_GET['id'] : '';
+$batchparts = explode("_",$batchid);
+$batchname = $batchparts[0];
 
-if($batchname !== '') {
+if($batchid !== '') {
 
-$batchdb = new PDO("sqlite:batches/$batchname.sqlite3");
+$batchdb = new PDO("sqlite:batches/$batchid.sqlite3");
 $batchdb->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $batchresult = $batchdb->query("SELECT * FROM frames");
 
@@ -24,7 +24,7 @@ foreach ($batchresult as $row) {
     $rowarray = array();
     foreach ($columns as $column) {
         if($column == 'id'){
-        $rowarray[] = $batchnameshort."_".str_pad($row[$column], 4, '0', STR_PAD_LEFT);
+        $rowarray[] = $batchname."_".str_pad($row[$column], 4, '0', STR_PAD_LEFT);
         } else {
         $rowarray[] = $row[$column];
         }

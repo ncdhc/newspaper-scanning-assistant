@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap 101 Template</title>
+        <title>PaperBoy! &middot; Scan Batch</title>
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.darkly.min.css" rel="stylesheet">
@@ -72,7 +72,7 @@
         </script>
         <div class="container-fluid">
             <div class="row">
-                <h1><?php echo ucwords($batchcreator);?>'s Scanning Assistant</h1>
+                <h1>PaperBoy!</h1>
                 <p class="textcenter"><?php echo $batchname;?>_<span class="label label-default" style="font-size: 16px"><?php echo sprintf('%04d', $thisrowid);?></span></p>
                 <hr>
             </div>

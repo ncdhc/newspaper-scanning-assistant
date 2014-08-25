@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Scanning Assistant</title>
+    <title>PaperBoy! &middot; Delete Batch</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.darkly.min.css" rel="stylesheet">
