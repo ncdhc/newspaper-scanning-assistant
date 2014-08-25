@@ -11,7 +11,7 @@ $id = isset($_POST['batchid']) ? filter_input(INPUT_POST, 'batchid', FILTER_SANI
 
 $batchdb = new PDO("sqlite:batches/$id.sqlite3");
 $batchdb->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$addrow = "INSERT INTO frames (pagenumber, date, volume, issue, edition, flag, note) VALUES ('$pagenumber', '$date', '$volume', '$issue', '$edition', '$flag', '$note')";
+$addrow = "INSERT INTO frames (date, volume, issue, edition, pagenumber, flag, note) VALUES ('$date', '$volume', '$issue', '$edition', '$pagenumber', '$flag', '$note')";
 $stmt = $batchdb->prepare($addrow);
 $stmt->execute();
 $batchdb = null; //close db

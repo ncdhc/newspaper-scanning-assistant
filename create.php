@@ -12,7 +12,7 @@ if($name == '' || $creator== '') {
   
     $batchdb = new PDO("sqlite:batches/$filenamestring.sqlite3");
     $batchdb->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $batchdb->exec("CREATE TABLE IF NOT EXISTS frames (id INTEGER PRIMARY KEY, pagenumber TEXT, date TEXT, volume TEXT, issue TEXT, edition TEXT, flag TEXT, note TEXT)");
+    $batchdb->exec("CREATE TABLE IF NOT EXISTS frames (date TEXT, volume TEXT, issue TEXT, edition TEXT, pagenumber TEXT, id INTEGER PRIMARY KEY, flag TEXT, note TEXT)");
     $batchdb = null;
   
   // send to scan.php
