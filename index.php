@@ -69,7 +69,7 @@
                             $batchcreator = $batchparts[1];
                             $timestamp = substr($batchparts[2],0,4).'-'.substr($batchparts[2],4,2).'-'.substr($batchparts[2],6,5).':'.substr($batchparts[2],11,2).':'.substr($batchparts[2],13,2);
                             
-                            echo "<tr><td>$batchname</td><td>$batchcreator</td><td>".date('l, F j, Y \a\t g:ia',strtotime($timestamp))."</td><td><a class='btn btn-info btn-sm' href='scan.php?id=$batchid'><span class='glyphicon glyphicon-plus'></span> Resume</a></td><td><a target='_blank' class='btn btn-primary btn-sm' href='download.php?id=$batchid'><span class='glyphicon glyphicon-save'></span></a></td><td><a class='muted pull-right' href='delete.php?id=$batchid'><span class='glyphicon glyphicon-remove'></span></a></td></tr>";
+                            echo "<tr><td>$batchname</td><td>$batchcreator</td><td>".date('l, F j, Y \a\t g:ia',strtotime($timestamp))."</td><td><a class='btn btn-info btn-sm' href='scan.php?id=$batchid'><span class='glyphicon glyphicon-plus'></span> Resume</a></td><td><a target='_blank' class='btn btn-primary btn-sm' href='download.php?id=$batchid'><span class='glyphicon glyphicon-save'></span></a></td><td><a class='muted pull-right' href='delete.php?id=$batchid'><span class='glyphicon glyphicon-trash'></span></a></td></tr>";
                         
                             }
                         } 
