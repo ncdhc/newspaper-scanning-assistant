@@ -72,7 +72,7 @@
         </script>
         <div class="container-fluid">
             <div class="row">
-                <h1>PaperBoy!</h1>
+                <h1>Scanning Assistant</h1>
                 <p class="textcenter"><?php echo $batchname;?>_<span class="label label-default" style="font-size: 16px"><?php echo sprintf('%04d', $thisrowid);?></span></p>
                 <hr>
             </div>
