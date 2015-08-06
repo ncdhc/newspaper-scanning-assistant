@@ -5,7 +5,7 @@ Scanning Assistant is a tiny application meant to assist scanning technicians in
 
 In a mobile-compatible interface it:
 + Provides easy ways to enter Page Number, Date, Volume, Edition, and Issue Numbers as well as a means to flag a page for review and make a note.
-+ Attempts to "guess" the next sequence to save time, when a new issue is begun, prompts a change in Date, Volume, Edition and Issue. 
++ Attempts to "guess" the next sequence to save time; prompts a change in Date, Volume, Edition and Issue for new issues in sequence. 
 + Stores data in SQLite, so that a batch may be resumed
 + Outputs data in tab-delimited text for import into existing workflows
 
